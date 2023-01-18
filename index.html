@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>和菓子TOP</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="和菓子のサイト">
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    
+</head>
+
+<!-- HEADER -->
+<body>
+    <!-- topへ戻るボタン -->
+    <p class="pagetop"><a href="#page-top"><img src="./img/TOP.png" alt=""></a></p>
+
+    <header id="page-top">
+        <div class="page-header">
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#page-top">北<span>関</span>堂</a></li>
+                    <li><a href="#page-top">top</a></li>
+                    <li><a href="">topics</a></li>
+                    <li><a href="">北関堂について</a></li>
+                    <li><a href="">店舗アクセス</a></li>
+                    <li><a href="">商品情報</a></li>
+                    <li><a href="">採用情報</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-header-sp">
+            <nav>
+                <ul class="main-nav-sp">
+                    <li><a href="#page-top">北<span>関</span>堂</a></li>
+                </ul>
+            </nav>
+        </div>
+    <!--  ハンバーガーメニュー-->
+        <div class="hambager-dt">
+            <div class="hambager">
+                <div class="openbtn1"><span></span><span></span><span></span></div>
+            </div>
+            <nav id="g-nav">
+                <div id="g-nav-list">
+                    <ul>
+                        <li>
+                            <a href="#about">TOP</a>
+                        </li>
+                        <li>
+                            <a href="#guid">TOPICS</a>
+                        </li>
+                        <li>
+                            <a href="#">北関堂について</a>
+                        </li>
+                        <li>
+                            <a href="#access">店舗アクセス</a>
+                        </li>
+                        <li>
+                            <a href="#news">商品情報</a>
+                        </li>
+                        <li>
+                            <a href="./form.html">採用情報</a>
+                        </li>
+                        <li>
+                            <p>公式Twitter</p>
+                        </li>
+                        <li>
+                            <img src="./img/twitterのフリーアイコン素材 (1).png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+            </script>
+            <script>
+                $(".openbtn1").click(function () {//ボタンがクリックされたら
+                    $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+                    $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+                });
+
+                $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+                    $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
+                    $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+                });
+            </script>
+        </div>
+        <!--  ハンバーガーメニューおしまい-->
+    </header>
+
+<!-- main #top -->
+    <main>
+        <section id="top">
+            <div class="top-img">
+                <p>大切なひとときに<br>季節に合わせた和菓子を</p>
+            </div>
+            <div class="topic">
+                <h1>topics</h1>
+                <dl class="top-dl">
+                    <div class="topic-list">
+                        <dt><time>2011.11.1</time></dt>
+                        <dd>期間限定 丸ごと栗どら焼き発売</dd>
+                    </div>
+                    <div class="topic-list">
+                        <dt><time>2011.10.10</time></dt>
+                        <dd>大九藤井店にて出張販売</dd>
+                    </div>
+                </dl>
+                <div class="top-detail">
+                    <p>more</p>
+                </div>
+            </div>
+        </section>
+
+<!-- main #about -->
+        <section id="about" class="wrapper">
+            <h2>北関堂について</h2>
+            <div class="about-wrap">
+                <div class="about-text">
+                    <p>平成9年創業の当店では<br>
+                        四季折々の和菓子をご用意しております。
+                    </p>
+                    <p>
+                        「今度の集まりでは何をご用意したら…」<br>
+                        「季節の雰囲気に合わせた和菓子がほしい」
+                    </p>
+                    <p>
+                        これまで培ってきたノウハウで、<br>
+                        全てのお客様にご満足いただけるお品を提供致します。
+                    </p>
+                </div>
+                <div class="about-img"></div>
+            </div>
+            <div class="about-spring wrapper">
+                <div class="about-spring-text">
+                    <p>
+                        桃の節句や端午の節句<br>
+                        新生活のお祝いに
+                    </p>
+                </div>
+                <div class="about-spring-img">
+                    <div class="about-spring-imgfirst"></div>
+                    <div class="about-spring-imglast"></div>
+                </div>
+            </div>
+            <div class="about-summer wrapper">
+                <div class="about-summer-text">
+                    <p>
+                        お中元に<br>
+                        涼をよぶ夏のギフト
+                    </p>
+                </div>
+                <div class="about-summer-img">
+                    <div class="about-summer-imgfirst"></div>
+                    <div class="about-summer-imglast"></div>
+                </div>
+            </div>
+            <div class="about-autmmn wrapper">
+                <div class="about-autmmn-text">
+                    <p>
+                        栗どら焼きに芋ようかん<br>
+                        秋は和菓子がおいしい季節
+                    </p>
+                </div>
+                <div class="about-autmmn-img">
+                    <div class="about-autmmn-imgfirst"></div>
+                    <div class="about-autmmn-imglast"></div>
+                </div>
+            </div>
+            <div class="about-winter wrapper">
+                <div class="about-winter-text">
+                    <p>一年の感謝の贈り物に<br>
+                        お年始回りのお土産に</p>
+                </div>
+                <div class="about-winter-img">
+                    <div class="about-winter-imgfirst"></div>
+                    <div class="about-winter-imglast"></div>
+                </div>
+            </div>
+        </section>
+
+<!-- main #access -->
+        <section id="access" class="wrapper">
+            <h2>店舗アクセス</h2>
+            <div class="access-box">
+                <div class="access-box-text">
+                    <dl>
+                        <dd>営業時間</dd>
+                        <dt>10:00～18:00</dt>
+                    </dl>
+                    <dl>
+                        <dd>定休日</dd>
+                        <dt>木曜日</dt>
+                    </dl>
+                    <dl>
+                        <dd>住所</dd>
+                        <dt>札幌市中央区南9条西3丁目2‐10札幌KSビル&nbsp;6F</dt>
+                    </dl>
+                    <dl>
+                        <dd>電話番号</dd>
+                        <dt>011-232-5508</dt>
+                    </dl>
+                    <dl>
+                        <dd>アクセス</dd>
+                        <dt>地下鉄&nbsp;南北線中島公園駅より&nbsp;徒歩1分</dt>
+                    </dl>
+                </div>
+                <div class="access-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.635557952242!2d141.35341401532074!3d43.049098879146676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2bc0869bafeb%3A0x770b6b5a9dc821b7!2z5pyt5bmM77yr77yO77yz44OT44Or!5e0!3m2!1sja!2sjp!4v1670295127691!5m2!1sja!2sjp" 
+                        width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- footer -->
+    <footer>
+        <p>公式Twitter</p>
+        <p>新着情報はこちら</p>
+        <div class="fotter-icon">
+            <img src="./img/twitterのフリーアイコン素材 (2).png" alt="">
+        </div>
+        <small>&copy;2022  kitakando all right reserved</small>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+        var pagetop = $('.pagetop');
+            $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                    pagetop.fadeIn();
+            } else {
+                    pagetop.fadeOut();
+                    }
+            });
+            pagetop.click(function () {
+                $('body, html').animate({ scrollTop: 0 }, 100);
+                    return false;
+            });
+        });
+        </script>
+</body>
+</html>
