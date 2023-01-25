@@ -795,7 +795,7 @@ h2 {
     width: 100vw;
 }
 .about-autmmn-text p:before {
-    right: 0px;
+    right: -40px;
 }
 
 /*
