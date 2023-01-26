@@ -794,8 +794,11 @@ h2 {
     height: 90vh;
     width: 100vw;
 }
-.about-autmmn-text p:before {
-    right: -80px;
+.about-spring-text p:before,
+.about-summer-text p:before,
+.about-autmmn-text p:before,
+.about-winter-text p:before {
+    right: -70px;
 }
 
 /*
