@@ -127,7 +127,7 @@ topへ戻るボタン */
 }
 .pagetop a img {
     z-index: 99999;
-    width: 15vw;
+    width: clamp(160px,15vw,320px);
 }
 /* 
 HEADER
